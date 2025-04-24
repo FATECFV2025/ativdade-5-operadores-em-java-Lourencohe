@@ -1,29 +1,15 @@
-import java.util.Scanner;
-
 public class App {
-        //Comentário
-
-    public static void funcao_teste (){
-        //Biblioteca para entrada de dados
-        Scanner ler = new Scanner(System.in);
-
-        //variável local 
-        String v2;
-        int v1;
-
-        System.out.println("Comando de Saida de Dados");
-        
-        System.out.printf("Informe uma palavra: ");
-        v2 = ler.next();
-
-        System.out.printf("Informe um número: ");
-        v1 = ler.nextInt();
-
-        System.out.printf(v2+" "+v1);
-    }
     public static void main(String[] args) throws Exception {
-        funcao_teste();
-
-
+        Operadores op = new Operadores();
+ 
+        System.out.println("Resultado:" + op.adicao(10, 8));
+ 
+        System.out.println("Resultado" + op.subtracao(19, 7));
+ 
+        System.out.println("Resultado" + op.multiplicacao(4, 3));
+ 
+        System.out.println("Resultado" + op.divisao(10, 0));
+ 
+        System.out.println("Resultado" + op.comparacao(10, 0));
     }
 }
